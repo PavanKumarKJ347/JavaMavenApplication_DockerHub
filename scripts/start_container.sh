@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-# Pull the Docker image from Docker Hub
-docker pull abhishekf5/simple-python-flask-app
+#Pull Docker Image from DockerHub
+docker pull devopscloudautomation/javadockerapplication:34
 
-# Run the Docker image as a container
-docker run -d -p 5000:5000 abhishekf5/simple-python-flask-app
+#Run Docker Image as a Container
+docker run -d --name javacontainer -p 8080:8080 devopscloudautomation/javadockerapplication:34
