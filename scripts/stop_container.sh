@@ -2,4 +2,4 @@
 set -e
 
 #Stop Running Container
-echo "Hi"
+docker rm -f javadockercontainer
