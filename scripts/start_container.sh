@@ -2,7 +2,7 @@
 set -e
 
 #Pull Docker Image from DockerHub
-docker pull devopscloudautomation/javadockerapplication:80
+docker pull devopscloudautomation/javadockerapplication:82
 
 #Run Docker Image as a Container
-docker run -d --name javadockercontainer -p 8080:8080 devopscloudautomation/javadockerapplication:80
+docker run -d --name javadockercontainer -p 8080:8080 devopscloudautomation/javadockerapplication:82
