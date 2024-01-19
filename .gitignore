@@ -1,5 +1,4 @@
-# Operating System Files
-
+#Operating System Files
 *.DS_Store
 Thumbs.db
 *.sw?
@@ -8,26 +7,27 @@ Thumbs.db
 *~
 *.sublime-*
 
-# Build Artifacts
-
+#Build Artifacts
 **/.gradle/
 **/build/
 **/target/
 **/bin/
 **/dependency-reduced-pom.xml
 
-# Eclipse Project Files
+#Eclipse Project Files
 .metadata
 .metadata/
 **/.classpath
 **/.project
 **/.settings/
 
-# IntelliJ IDEA Files
-
+#IntelliJ IDEA Files
 **/*.iml
 **/*.ipr
 **/*.iws
 **/*.idea
+
+#Visual Studio Code Files
+**/.vscode/
 
 README.html
