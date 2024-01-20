@@ -14,7 +14,7 @@ public class HelloWorldService {
 
 		logger.debug("getDesc() is executed!");
 
-		return "Java + Maven + GitHub + Jenkins + Docker + Kubernetes + Terraform + Amazon Web Services";
+		return "Java + Maven + Git + GitHub + Jenkins + Docker + Kubernetes + Terraform + Amazon Web Services";
 
 	}
 
