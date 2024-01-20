@@ -14,7 +14,7 @@ public class HelloWorldService {
 
 		logger.debug("getDesc() is executed!");
 
-		return "Java + Maven + Jenkins + Docker + Kubernetes ";
+		return "Java + Maven + GitHub + Jenkins + Docker + Kubernetes + Terraform + Amazon Web Services";
 
 	}
 
@@ -23,9 +23,9 @@ public class HelloWorldService {
 		logger.debug("getTitle() is executed! $name : {}", name);
 
 		if(StringUtils.isEmpty(name)){
-			return "Hello DevOpsCloudAutomation";
+			return "DevOpsCloudAutomation";
 		}else{
-			return "Hello " + name;
+			return name;
 		}
 		
 	}
