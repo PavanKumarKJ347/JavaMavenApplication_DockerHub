@@ -24,7 +24,7 @@
 		<h1>${title}</h1>
 		<p>
 			<c:if test="${not empty msg}">
-				Hello ${msg}
+				${msg}
 			</c:if>
 
 			<c:if test="${empty msg}">
@@ -40,15 +40,16 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To Mithun Technologies Private Limited, Bengaluru, Inida ,Karnataka.</h2>
-			<h3>Contact @ +91-9980923226,+91-9980923216</h3>
+			<h2>Welcome to DevOpsCloudAutomation</h2>
+			<h3>Email: Pavankumarkj347@Gmail.com</h3>
+			<h3>Phone Number: +91 9164546000</h3>
 		</div>	
 	</div>
 
 
 	<hr>
 	<footer>
-		<p>&copy; Mithun Technologies 2023</p>
+		<p>&copy; DevOpsCloudAutomation</p>
 	</footer>
 </div>
 
