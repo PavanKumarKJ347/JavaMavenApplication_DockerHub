@@ -43,10 +43,9 @@
 			<h2>Welcome to DevOpsCloudAutomation</h2>
 			<h3>Email: Pavankumarkj347@Gmail.com</h3>
 			<h3>Phone Number: +91 9164546000</h3>
-		</div>	
+		</div>
 	</div>
-
-
+	
 	<hr>
 	<footer>
 		<p>&copy; DevOpsCloudAutomation</p>

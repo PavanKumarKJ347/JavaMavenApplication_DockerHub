@@ -6,28 +6,28 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 @Service
-public class HelloWorldService {
-
+public class HelloWorldService
+{
 	private static final Logger logger = LoggerFactory.getLogger(HelloWorldService.class);
 
-	public String getDesc() {
-
+	public String getDesc()
+	{
 		logger.debug("getDesc() is executed!");
 
 		return "Java + Maven + Git + GitHub + Jenkins + Docker + Kubernetes + Terraform + Amazon Web Services";
-
 	}
 
-	public String getTitle(String name) {
-
+	public String getTitle(String name)
+	{
 		logger.debug("getTitle() is executed! $name : {}", name);
-
-		if(StringUtils.isEmpty(name)){
+		
+		if(StringUtils.isEmpty(name))
+		{
 			return "DevOpsCloudAutomation";
-		}else{
+		}
+		else
+		{
 			return name;
 		}
-		
 	}
-
 }
