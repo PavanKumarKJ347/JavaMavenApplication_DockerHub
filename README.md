@@ -10,9 +10,6 @@ This project can be used to build an end to end CICD Pipeline.
 - Push Docker Image to Registry.
 - Deploy Application into Kubernetes Cluster.
 
-## Screenshots
-
-![App Screenshot](file:///Users/pavankumarkj/Downloads/CICD.jpeg)
 # Project Execution
 ## Build Project
 
