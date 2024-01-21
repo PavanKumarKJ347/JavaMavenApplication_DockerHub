@@ -10,7 +10,7 @@ This project can be used to build an end to end CICD Pipeline.
 - Push Docker Image to Registry.
 - Deploy Application into Kubernetes Cluster.
 
-![CICD](https://github.com/DevOpsCloudAutomation/Java_Docker/assets/123757746/cb3e066a-a568-4ef8-a4f6-a7c102a68a24)
+![CICD](https://github.com/DevOpsCloudAutomation/Java_Docker/assets/123757746/085ef572-bd9d-4d05-b710-4fc2a0646d39)
   
 # Project Execution
 ## Build Project
