@@ -42,7 +42,7 @@ pipeline
         {
             steps()
             {
-                sh 'docker build -t devopscloudautomation/webapplication:$Build_Number .'
+                sh 'docker build -t devopscloudautomation/webapplication:${Build_Number} .'
             }
         }
 
@@ -54,7 +54,7 @@ pipeline
                 {
                     sh 'docker login -u devopscloudautomation -p ${Docker_Hub_Password}'
                 }
-                sh 'docker push devopscloudautomation/webapplication:$Build_Number'
+                sh 'docker push devopscloudautomation/webapplication:${Build_Number}'
             }
         }
 
@@ -62,7 +62,7 @@ pipeline
         {
             steps()
             {
-                sh 'docker rmi -f devopscloudautomation/webapplication:$Build_Number'
+                sh 'docker rmi -f devopscloudautomation/webapplication:${Build_Number}'
             }
         }
     }
