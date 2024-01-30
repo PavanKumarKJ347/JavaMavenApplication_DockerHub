@@ -21,7 +21,7 @@ pipeline
                 git branch: 'main', url: 'https://github.com/DevOpsCloudAutomation/JavaDockerApplication.git'
             }
         }
-    
+
         stage('Build Project')
         {
             steps()
@@ -63,6 +63,14 @@ pipeline
             steps()
             {
                 sh 'docker rmi -f devopscloudautomation/webapplication:${buildNumber}'
+            }
+        }
+
+        stage('Deploy Application to Kubernetes Cluster')
+        {
+            steps()
+            {
+                echo "Deploy Application to Kubernetes Cluster"
             }
         }
     }
