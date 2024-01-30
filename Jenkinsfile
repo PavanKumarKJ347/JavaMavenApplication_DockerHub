@@ -7,6 +7,11 @@ pipeline
         maven 'Maven_3.9.6'
     }
 
+    environment
+    {
+        Build_Number = "${BUILD_NUMBER}"
+    }
+
     stages
     {
         stage('Git Checkout')
@@ -37,7 +42,7 @@ pipeline
         {
             steps()
             {
-                sh 'docker build -t devopscloudautomation/webapplication:latest .'
+                sh 'docker build -t devopscloudautomation/webapplication:$Build_Number .'
             }
         }
 
@@ -49,7 +54,7 @@ pipeline
                 {
                     sh 'docker login -u devopscloudautomation -p ${Docker_Hub_Password}'
                 }
-                sh 'docker push devopscloudautomation/webapplication:latest'
+                sh 'docker push devopscloudautomation/webapplication:$Build_Number'
             }
         }
 
@@ -57,7 +62,7 @@ pipeline
         {
             steps()
             {
-                sh 'docker rmi -f devopscloudautomation/webapplication:latest'
+                sh 'docker rmi -f devopscloudautomation/webapplication:$Build_Number'
             }
         }
     }
