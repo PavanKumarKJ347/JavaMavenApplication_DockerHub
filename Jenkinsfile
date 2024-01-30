@@ -32,5 +32,33 @@ pipeline
                 sh 'mvn sonar:sonar'
             }
         }
+
+        stage('Build Docker Image')
+        {
+            steps()
+            {
+                sh 'docker build -t devopscloudautomation/webapplication:latest .'
+            }
+        }
+
+        stage('Push Docker Image')
+        {
+            steps()
+            {
+                withCredentials([string(credentialsId: 'Docker_Hub_Password', variable: 'Docker_Hub_Password')])
+                {
+                    sh 'docker login -u devopscloudautomation -p ${Docker_Hub_Password}'
+                }
+                sh 'docker push devopscloudautomation/webapplication:latest'
+            }
+        }
+
+        stage('Remove Docker Image Locally in Jenkins Server')
+        {
+            steps()
+            {
+                sh 'docker rmi -f devopscloudautomation/webapplication:latest'
+            }
+        }
     }
 }
