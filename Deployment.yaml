@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webpage-deployment
+  namespace: test
+spec:
+  replicas: 2
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      application: webpage
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 30
+  template:
+    matadata:
+      name: webpage-pod
+      labels:
+        application: webpage
+    spec:
+      containers:
+      - name: webpage-container
+        image: devopscloudautomation/webapplication:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: 100M
+            memory: 256Mi
+          limits:
+            cpu: 200M
+            memory: 512mi
+---
+apiVersion: vi
+kind: Service
+metadata:
+  name: webpage-service
+  namespace: test
+spec:
+  type: NodePort
+  selector:
+    application: webpage
+  ports:
+  - port: 80
+    targetPort: 8080
