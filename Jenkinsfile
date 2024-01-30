@@ -66,11 +66,20 @@ pipeline
             }
         }
 
-        stage('Deploy Application to Kubernetes Cluster')
+        stage('Update Image Tag in Kubernetes Manifest')
         {
             steps()
             {
-                echo "Deploy Application to Kubernetes Cluster"
+                sh "sed -i 's/Build_Tag/${Build_Number}/g' mavenwebappdeployment.yaml"
+            }
+        }
+
+        stage('Deploy Application to EKS Kubernetes Cluster')
+        {
+            steps()
+            {
+                sh 'kubectl delete deployment Deployment.yaml -n test || true'
+                sh 'kubectl apply -f Deployment.yaml'
             }
         }
     }

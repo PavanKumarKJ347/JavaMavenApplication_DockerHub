@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: webpage-container
-        image: devopscloudautomation/webapplication:latest
+        image: devopscloudautomation/webapplication:Build_Tag
         ports:
         - containerPort: 8080
         resources:
