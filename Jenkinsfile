@@ -2,6 +2,11 @@ pipeline
 {
     agent any
 
+    tools
+    {
+        maven 'Maven_3.9.6'
+    }
+
     stages
     {
         stage('Git Checkout')
@@ -11,7 +16,7 @@ pipeline
                 git branch: 'main', url: 'https://github.com/DevOpsCloudAutomation/JavaDockerApplication.git'
             }
         }
-
+    
         stage('Build Project')
         {
             steps()
