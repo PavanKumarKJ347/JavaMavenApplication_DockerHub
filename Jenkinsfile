@@ -90,5 +90,15 @@ pipeline
         {
             cleanWs()
         }
+        
+        success
+        {
+
+        }
+
+        failure
+        {
+            
+        }
     }
 }
