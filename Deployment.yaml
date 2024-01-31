@@ -40,7 +40,7 @@ metadata:
   name: webpage-service
   namespace: test
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     application: webpage
   ports:
