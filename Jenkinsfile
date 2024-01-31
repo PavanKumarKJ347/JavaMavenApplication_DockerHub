@@ -66,7 +66,7 @@ pipeline
             }
         }
 
-        stage('Update Image Tag in Kubernetes Manifest')
+        stage('Update Docker Image Tag in Kubernetes Manifest')
         {
             steps()
             {
