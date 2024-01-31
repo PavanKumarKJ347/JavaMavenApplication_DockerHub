@@ -30,13 +30,18 @@ Java and Maven should be installed as a prerequisite to Build Project Code.
 
 ## Build Docker Image
 ```bash
-  docker build -t devopscloudautomation/javadockerapplication:107
+  docker build -t devopscloudautomation/webapplication:${buildNumber} .
 ```
 
 ## Push Docker Image to Registry
 ```bash
-  docker login -u Username -p Password
-  docker push devopscloudautomation/javadockerapplication:107
+  docker login -u devopscloudautomation -p ${Docker_Hub_Password}
+  docker push devopscloudautomation/webapplication:${buildNumber}
+```
+
+## Remove Docker Image Locally in Jenkins Server
+```bash
+  docker rmi -f devopscloudautomation/webapplication:${buildNumber}
 ```
 
 ## Deploy Application to Kubernetes Cluster
