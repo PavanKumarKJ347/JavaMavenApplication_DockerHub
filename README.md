@@ -48,9 +48,9 @@ Java and Maven should be installed as a prerequisite to Build Project Code.
 ```
 
 ## Update Docker Image Tag in Kubernetes Manifest
-'''bash
+```bash
   sed -i 's/Build_Tag/${Build_Number}/g' Deployment.yaml
-,,,
+```
 
 ## Deploy Application to Kubernetes Cluster
 ```bash
