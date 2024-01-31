@@ -4,10 +4,12 @@
 This project can be used to build an end to end CICD Pipeline.
 ## This project can be used to build multiple CICD Pipeline stages as mentioned below 
 
+- Checkout Code from GitHub.
 - Build Project.
 - Execute SonarQube Test.
 - Build Docker Image.
 - Push Docker Image to Registry.
+- Remove Docker Image Locally in Jenkins.
 - Deploy Application into Kubernetes Cluster.
 
 ![CICD](https://github.com/DevOpsCloudAutomation/Java_Docker/assets/123757746/085ef572-bd9d-4d05-b710-4fc2a0646d39)
