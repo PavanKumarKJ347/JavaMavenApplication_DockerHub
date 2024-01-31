@@ -78,7 +78,7 @@ pipeline
         {
             steps()
             {
-                sh 'kubectl delete deployment Deployment.yaml -n test || true'
+                sh 'kubectl delete deployment webpage-deployment -n test || true'
                 sh 'kubectl apply -f Deployment.yaml'
             }
         }
