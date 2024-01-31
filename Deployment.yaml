@@ -34,7 +34,7 @@ spec:
             cpu: 200M
             memory: 512mi
 ---
-apiVersion: vi
+apiVersion: v1
 kind: Service
 metadata:
   name: webpage-service
