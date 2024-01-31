@@ -70,7 +70,7 @@ pipeline
         {
             steps()
             {
-                sh "sed -i 's/Build_Tag/${Build_Number}/g' mavenwebappdeployment.yaml"
+                sh "sed -i 's/Build_Tag/${Build_Number}/g' Deployment.yaml"
             }
         }
 
