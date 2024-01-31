@@ -13,6 +13,9 @@ This project can be used to build an end to end CICD Pipeline.
 - Update Docker Image Tag in Kubernetes Manifest.
 - Deploy Application into Kubernetes Cluster.
 
+### Tools and Technologies Used
+- Java, Git, GitHub, Maven, SonarQube, Jenkins, Docker, DockerHub and Kubernetes.
+
 ![CICD](https://github.com/DevOpsCloudAutomation/Java_Docker/assets/123757746/085ef572-bd9d-4d05-b710-4fc2a0646d39)
   
 # Project Execution
