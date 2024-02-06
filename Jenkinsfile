@@ -93,12 +93,12 @@ pipeline
         
         success
         {
-
+            echo "Deployment is Successful"
         }
 
         failure
         {
-            
+            echo "Deployment is Failed"
         }
     }
 }
