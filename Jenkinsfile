@@ -102,7 +102,7 @@ pipeline
         {
             slackSend channel: 'devopscloudautomation',
 			color: 'good',
-			message: "Application Deployment is Failed to Production Environment\n ${currentBuild.currentResult} ⛔️ Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More Information Available at: ${env.BUILD_URL}"
+			message: "${currentBuild.currentResult} ⛔️\n Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n Application Deployment is Failed to Production Environment\n More Information Available at: ${env.BUILD_URL}"
         }
     }
 }
