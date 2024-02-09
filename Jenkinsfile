@@ -42,7 +42,7 @@ pipeline
         {
             steps()
             {
-                sh 'docker build -t devopscloudautomatio/webapplication:${buildNumber} .'
+                sh 'docker build -t devopscloudautomation/webapplication:${buildNumber} .'
             }
         }
 
@@ -95,7 +95,7 @@ pipeline
         {
             slackSend channel: 'devopscloudautomation',
 			color: 'good',
-			message: "Application is Successfully Deployed to Production Environments\n ${currentBuild.currentResult} ✅ Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More Information Available at: ${env.BUILD_URL}"
+			message: "${currentBuild.currentResult} ✅\n Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n Application is Successfully Deployed to Production Environments\n More Information Available at: ${env.BUILD_URL}"
         }
 
         failure
