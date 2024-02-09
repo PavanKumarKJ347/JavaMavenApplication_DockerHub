@@ -95,14 +95,14 @@ pipeline
         {
             slackSend channel: 'devopscloudautomation',
 			color: 'good',
-			message: "Application is Successfully Deployed to Production Environments\n ${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More Information Available at: ${env.BUILD_URL}"
+			message: "Application is Successfully Deployed to Production Environments\n ${currentBuild.currentResult} ✅ Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More Information Available at: ${env.BUILD_URL}"
         }
 
         failure
         {
             slackSend channel: 'devopscloudautomation',
 			color: 'good',
-			message: "Application Deployment is Failed to Production Environment\n ${currentBuild.currentResult}:* Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More Information Available at: ${env.BUILD_URL}"
+			message: "Application Deployment is Failed to Production Environment\n ${currentBuild.currentResult} ⛔️ Job Name: ${env.JOB_NAME} || Build Number: ${env.BUILD_NUMBER}\n More Information Available at: ${env.BUILD_URL}"
         }
     }
 }
