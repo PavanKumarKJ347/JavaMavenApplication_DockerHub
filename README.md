@@ -18,6 +18,11 @@ This project can be used to build an end to end CICD Pipeline.
 ![CICD](https://github.com/DevOpsCloudAutomation/Java_Docker/assets/123757746/085ef572-bd9d-4d05-b710-4fc2a0646d39)
   
 # Project Execution
+## Git Checkout
+```bash
+  git branch: 'main', url: 'https://github.com/DevOpsCloudAutomation/JavaDockerApplication.git'
+```
+
 ## Build Project
 
 Build Automation Tool Maven can be used to build this project as this project is developed using Java Programming Language.
@@ -57,4 +62,8 @@ Java and Maven should be installed as a prerequisite to Build Project Code.
 ## Deploy Application to Kubernetes Cluster
 ```bash
   kubectl apply -f Deployment.yaml
+
+  helm install helmwebapplication helmwebapplication -n development
 ```
+Note:
+Application can be deployed to Kubernetes Cluster using Kubernetes Manifest Files as well as Helm Chart.
