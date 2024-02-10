@@ -65,5 +65,5 @@ Java and Maven should be installed as a prerequisite to Build Project Code.
 
   helm install helmwebapplication helmwebapplication -n development
 ```
-Note:
+Note:  
 Application can be deployed to Kubernetes Cluster using Kubernetes Manifest Files as well as Helm Chart.
