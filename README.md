@@ -1,8 +1,9 @@
 
 # End to End CICD Pipeline Project
 
-This project can be used to build an end to end CICD Pipeline.
-## This project can be used to build multiple CICD Pipeline stages as mentioned below 
+## This Project can be used to Build an End to End CICD Pipeline.
+
+## CICD Pipeline Stages
 
 - Checkout Code from GitHub.
 - Build Project.
