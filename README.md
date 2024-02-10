@@ -12,6 +12,7 @@ This project can be used to build an end to end CICD Pipeline.
 - Remove Docker Image Locally in Jenkins.
 - Update Docker Image Tag in Kubernetes Manifest.
 - Deploy Application into Kubernetes Cluster.
+- Send Build Status to Slack.
 
 ### Tools and Technologies used are Java, Git, GitHub, Maven, SonarQube, Jenkins, Docker, DockerHub and Kubernetes.
 
