@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.mt</groupId>
-	<artifactId>java-web-app</artifactId>
+	<groupId>com</groupId>
+	<artifactId>java-web-application</artifactId>
 	<packaging>war</packaging>
 	<version>1.1.1</version>
 	
@@ -93,7 +93,7 @@
 		</dependency>
 	</dependencies>
 	
-	<!-- <distributionManagement>
+	<distributionManagement>
 	    <repository>
 	    	<id>Nexus</id>
 	    	<name>Releases Nexus Repository</name>
@@ -105,7 +105,7 @@
 	    	<name>Snapshot Nexus Repository</name>
 	    	<url>http://13.235.8.113:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
-	</distributionManagement> -->
+	</distributionManagement>
 	
 	<build>
 		<plugins>
