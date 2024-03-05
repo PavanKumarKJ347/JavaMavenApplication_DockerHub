@@ -29,29 +29,29 @@ pipeline
                 sh 'mvn clean package'
             }
         }
-
+        
         stage('SonarQube and Sonatype Nexus')
-		{
-			parallel
-			{
-				stage('SonarQube Test')
+        {
+            parallel
+            {
+                stage('SonarQube Test')
                 {
                     steps()
                     {
                         sh 'mvn sonar:sonar'
                     }
                 }
-
-				stage('Deploy Build Artifact to Sonatype Nexus')
+                
+                stage('Deploy Build Artifact to Sonatype Nexus')
                 {
                     steps()
                     {
                         sh 'mvn deploy'
                     }
                 }
-			}
-		}
-
+            }
+        }
+        
         stage('Build Docker Image')
         {
             steps()
