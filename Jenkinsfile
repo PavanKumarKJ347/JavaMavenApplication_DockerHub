@@ -38,6 +38,14 @@ pipeline
             }
         }
 
+        stage('Deploy Build Artifact to Sonatype Nexus')
+        {
+            steps()
+            {
+                sh 'mvn deploy'
+            }
+        }
+
         stage('Build Docker Image')
         {
             steps()
