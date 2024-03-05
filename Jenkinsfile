@@ -42,7 +42,7 @@ pipeline
                     }
                 }
                 
-                stage('Deploy Build Artifact to Sonatype Nexus')
+                stage('Upload Build Artifact to Sonatype Nexus')
                 {
                     steps()
                     {

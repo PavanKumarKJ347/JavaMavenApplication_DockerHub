@@ -8,6 +8,7 @@
 - Checkout Code from GitHub.
 - Build Project.
 - Execute SonarQube Test.
+- Upload Build Artifact to Sonatype Nexus.
 - Build Docker Image.
 - Push Docker Image to Registry.
 - Remove Docker Image Locally in Jenkins.
@@ -38,6 +39,11 @@ Java and Maven should be installed as a prerequisite to Build Project Code.
 ## Execute SonarQube Test
 ```bash
   mvn sonar:sonar
+```
+
+## Upload Build Artifact to Sonatype Nexus
+```bash
+  mvn deploy
 ```
 
 ## Build Docker Image
