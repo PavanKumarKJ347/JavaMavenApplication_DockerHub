@@ -51,7 +51,7 @@ Java and Maven should be installed as a prerequisite to Build Project Code.
   docker build -t devopscloudautomation/webapplication:${buildNumber} .
 ```
 
-## Push Docker Image to Registry
+## Push Docker Image to Docker Hub Registry
 ```bash
   docker login -u devopscloudautomation -p ${Docker_Hub_Password}
   docker push devopscloudautomation/webapplication:${buildNumber}
