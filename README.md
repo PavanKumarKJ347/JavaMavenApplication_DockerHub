@@ -10,7 +10,7 @@
 - Execute SonarQube Test.
 - Upload Build Artifact to Sonatype Nexus.
 - Build Docker Image.
-- Push Docker Image to Registry.
+- Push Docker Image to Docker Hub Registry.
 - Remove Docker Image Locally in Jenkins.
 - Update Docker Image Tag in Kubernetes Manifest.
 - Deploy Application into Kubernetes Cluster.
