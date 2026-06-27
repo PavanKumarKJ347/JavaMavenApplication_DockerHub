@@ -26,12 +26,12 @@
 
 ## Build Project
 
-Build Automation Tool Maven can be used to build this project as this project is developed using Java Programming Language.
+### Build Automation Tool Maven Can be Used to Build This Project as This Project is Developed Using Java Programming Language.
 
 ```bash
   mvn clean package
 ```
-### Java and Maven should be installed as a prerequisite to Build Project Code.
+### Java and Maven Should be Installed as a Prerequisite to Build Project Code.
 
 ## Execute SonarQube Test
 ```bash
