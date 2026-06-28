@@ -21,7 +21,7 @@
 # Project Execution
 ## Git Checkout
 ```bash
-  git branch: 'main', url: 'https://github.com/DevOpsCloudAutomation/JavaDockerApplication.git'
+  git branch: 'main', url: 'https://github.com/PavanKumarKJ347/JavaMavenApplication_DockerHub.git'
 ```
 
 ## Build Project
@@ -70,5 +70,4 @@
 
   helm install helmwebapplication helmwebapplication -n production
 ```
-**Note**<br>
-**Application Can be Deployed to Kubernetes Cluster Using Kubernetes Manifest Files as well as Helm Chart.**
+## Application Can be Deployed to Kubernetes Cluster Using Kubernetes Manifest Files as well as Helm Chart.
