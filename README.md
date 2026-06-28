@@ -16,7 +16,7 @@
 - Deploy Application into Kubernetes Cluster.
 - Send CICD Pipeline Execution Status to Slack.
 
-### Tools and Technologies Used are Java, Git, GitHub, Maven, SonarQube, Sonatype Nexus, Jenkins, Docker, DockerHub, Kubernetes and Amazon Web Services.
+**Tools and Technologies Used are Java, Git, GitHub, Maven, SonarQube, Sonatype Nexus, Jenkins, Docker, DockerHub, Kubernetes and Amazon Web Services.**
 
 # Project Execution
 ## Git Checkout
@@ -26,12 +26,12 @@
 
 ## Build Project
 
-### Build Automation Tool Maven Can be Used to Build This Project as This Project is Developed Using Java Programming Language.
+**Build Automation Tool Maven Can be Used to Build This Project as This Project is Developed Using Java Programming Language.**
 
 ```bash
   mvn clean package
 ```
-### Java and Maven Should be Installed as a Prerequisite to Build Project Code.
+**Java and Maven Should be Installed as a Prerequisite to Build Project Code.**
 
 ## Execute SonarQube Test
 ```bash
